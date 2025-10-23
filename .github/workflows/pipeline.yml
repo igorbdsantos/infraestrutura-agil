@@ -1,0 +1,13 @@
+name: Integração Contínua Simples
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v3
+
+      - name: Testar ambiente
+        run: echo "Pipeline de integração contínua executado com sucesso!"
